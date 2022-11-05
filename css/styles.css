@@ -8,6 +8,8 @@ html {
   background-color: hsl(0, 0%, 95%);
   display: grid;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  margin: auto;
 
 } 
