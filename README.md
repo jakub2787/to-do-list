@@ -1,7 +1,7 @@
-# To-Do-list 
-##DEMO ##
+# To-Do-list #
+## DEMO ##
 https://jakub2787.github.io/to-do-list/
-##Technologies ##
+## Technologies ##
 -HTML
 -CSS
 -JAVASCRIPT
