@@ -1,0 +1,19 @@
+.form {
+    padding: 10px;
+}
+.form__button {
+    background-color: hsl(180, 100%, 27%);
+    padding: 10px;
+    color: white;
+    border: none;
+    margin-left: 40px;
+}
+.form__button:hover {
+    background-color: hsl(180, 100%, 32%);
+}
+.form__input {
+    padding: 10px;
+    width: 75%;
+    margin-left: 10px;
+    border: 1px solid hsl(0, 1%, 82%);
+}
