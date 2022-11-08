@@ -17,3 +17,8 @@
     margin-left: 10px;
     border: 1px solid hsl(0, 1%, 82%);
 }
+@media (max-width: 767px) {
+    .form__button {
+        width: 60%;
+    }
+}

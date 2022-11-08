@@ -5,7 +5,6 @@
     padding: 10px;
     border-bottom: 2px solid hsl(0, 1%, 82%);
     align-items: center;
-
 }    
 .list__item--done {
     text-decoration: line-through;
@@ -16,7 +15,7 @@
     border: none;
     padding: 0px;
     min-height: 30px;
-    min-width: 30px;
+    min-width: 30px
 }
 .button__done {
     background-color: hsl(120, 100%, 25%);
@@ -25,7 +24,6 @@
     padding: 0px;
     min-width: 30px;
     min-height: 30px;
-    text-decoration: none;
 }
 .button__done:hover {
     background-color: hsl(120, 100%, 30%);
