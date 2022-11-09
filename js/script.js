@@ -1,14 +1,6 @@
 {
-    const tasks = [
-        {
-            content: "Pójść na basen",
-            done: false,
-        },
-        {
-            content: "Zjeść obiad",
-            done: true,
-        },
-    ];
+    const tasks = [];
+        
     const toggleTaskDone = (index) => {
         tasks[index].done = !tasks[index].done;
         render();
@@ -48,7 +40,7 @@
             htmlString += `
             <li class="tasks__item " >
             <button class="js-done tasks__button--done">${task.done ? "✓" : ""}</button>
-                <span classs="${task.done ? "tasks__item--done" : ""}">${task.content}
+                <span class="${task.done ? "tasks__item--done" : ""}">${task.content}
                 </span>
                 <button class="js-remove tasks__button--remove">🗑️
                 </button>
