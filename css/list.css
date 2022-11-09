@@ -1,14 +1,17 @@
-.tasks__item {
+.tasks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}.tasks__item {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    gap: 20px;
+    grid-gap: 20px;
     padding: 10px;
-    border-bottom: 2px solid hsl(0, 1%, 82%);
+    border-bottom: 1px solid hsl(0, 1%, 82%);
     align-items: center;
 }    
 .tasks__item--done {
     text-decoration: line-through;
-    list-style-type: none;
 }
 .tasks__button--remove {
     background-color: hsl(0, 100%, 50%);
