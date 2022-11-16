@@ -18,7 +18,8 @@
     border: none;
     padding: 0px;
     min-height: 30px;
-    min-width: 30px
+    min-width: 30px;
+    transition: 1s;
 }
 .tasks__button--done {
     background-color: hsl(120, 100%, 25%);
@@ -27,6 +28,7 @@
     padding: 0px;
     min-width: 30px;
     min-height: 30px;
+    transition: 1s;
 }
 .tasks__button--done:hover {
     background-color: hsl(120, 100%, 30%);
