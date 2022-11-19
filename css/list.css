@@ -13,6 +13,9 @@
 .tasks__item--done {
     text-decoration: line-through;
 }
+.tasks__item--hidden {
+    display: none;
+}
 .tasks__button--remove {
     background-color: hsl(0, 100%, 50%);
     border: none;
@@ -34,5 +37,5 @@
     background-color: hsl(120, 100%, 30%);
 }
 .tasks__button--remove:hover {
-    background-color: hsl(0, 100%, 65%);
+    background-color: hsl(0, 100%, 67%);
 }
