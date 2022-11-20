@@ -2,20 +2,25 @@
     list-style: none;
     margin: 0;
     padding: 0;
-}.tasks__item {
+}
+
+.tasks__item {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 20px;
     padding: 10px;
     border-bottom: 1px solid hsl(0, 1%, 82%);
     align-items: center;
-}    
+} 
+
 .tasks__item--done {
     text-decoration: line-through;
 }
+
 .tasks__item--hidden {
     display: none;
 }
+
 .tasks__button--remove {
     background-color: hsl(0, 100%, 50%);
     border: none;
@@ -24,6 +29,7 @@
     min-width: 30px;
     transition: 1s;
 }
+
 .tasks__button--done {
     background-color: hsl(120, 100%, 25%);
     border: none;
@@ -33,9 +39,11 @@
     min-height: 30px;
     transition: 1s;
 }
+
 .tasks__button--done:hover {
     background-color: hsl(120, 100%, 30%);
 }
+
 .tasks__button--remove:hover {
     background-color: hsl(0, 100%, 67%);
 }
