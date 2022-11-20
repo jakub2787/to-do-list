@@ -8,27 +8,35 @@
             { ...tasks[index], done: !tasks[index].done},
             ...tasks.slice(index + 1),
         ];
+
         render();
+
     };
     const removeTask = (index) => {
         tasks = [
             ...tasks.slice(index, 0),
             ...tasks.slice(0 +1),
         ];
+
         render();
+
     };
 
     const hideDone = () => {
         hideDoneTasks=!hideDoneTasks;
+
         render();
+
     };
-    console.log(    )
+
     const addNewTask = (newTaskContent) => {
         tasks = [
             ...tasks,
             { content: newTaskContent },
         ];
+
         render();
+
     };
     const allTaskDone = () => {
         for(const task of tasks) {
@@ -60,8 +68,10 @@
             htmlString += `
 
             <li class="tasks__item ${task.done&& hideDoneTasks ? "tasks__item--hidden" : "" }">
-            <button class="js-done tasks__button--done">${task.done ? "✓" : ""}</button>
-                <span class="${task.done ? "tasks__item--done" : ""}">${task.content}
+            <button class="js-done 
+            tasks__button--done">${task.done ? "✓" : ""}</button>
+                <span class="${task.done ? "tasks__item--done" : ""}">
+                   ${task.content}
                 </span>
                 <button class="js-remove tasks__button--remove">🗑️
                 </button>
@@ -69,7 +79,6 @@
             `;
         };
         document.querySelector(".js-tasks").innerHTML = htmlString;
-
     };
 
     const renderButtons = () => {
@@ -107,14 +116,24 @@
         bindButtonsEvents(); 
     };
 
+    const clearTaskContent = () => {
+        const form = document.querySelector(".js-form");
+        form.reset();
+    }
     const onFormSubmit = (event) => {
         event.preventDefault();
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTaskElement = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskElement.value.trim();
 
         if (newTaskContent === "") {
+            clearTaskContent();
+            newTaskContent.focus();
             return;
         }
+
         addNewTask(newTaskContent);
+        clearTaskContent();
+        newTaskElement.focus();
     };
     const init = () => {
         render();
